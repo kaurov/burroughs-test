@@ -1,0 +1,12 @@
+# paths
+vendor/
+code-coverage/
+tmp/
+
+# ide
+.idea/
+nbproject/
+
+# files
+composer.phar
+composer.lock

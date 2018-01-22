@@ -1,0 +1,7 @@
+language: php
+before_script:
+- curl -s http://getcomposer.org/installer | php
+- php composer.phar install
+php:
+- "7.0"
+script: php vendor/bin/phpunit --colors --coverage-text --configuration tests/phpunit.xml.dist  tests/
