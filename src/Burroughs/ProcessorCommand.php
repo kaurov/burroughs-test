@@ -59,7 +59,7 @@ class ProcessorCommand extends Command
         $output->writeln('*****************************');
         $output->writeln('Payout Report Processor');
         $output->writeln('*****************************');
-        $output->writeln(sprintf('Generating and Saving Payout Report to: <info>%s</info>', $filename));
+        $output->writeln(sprintf('Generating and Saving Payout Report to: <info>%s</info>', CsvWriter::PATH . $filename));
 
         $processes = $this->getProcesses($config, $logger);
 

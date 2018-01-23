@@ -9,11 +9,13 @@ namespace Burrough\Burroughs\Writer;
 class CsvWriter
 {
     /**
-     * @var
+     * @var string
      */
     private $filename;
 
     private $fullFilePath;
+    
+    const PATH = 'output/';
 
     /**
      * @var resource
@@ -26,7 +28,7 @@ class CsvWriter
     public function __construct(string $filename)
     {
         $this->filename = $filename;
-        $this->fullFilePath = __DIR__ . '/../../../' . $filename;
+        $this->fullFilePath = __DIR__ . '/../../../' . static::PATH . $filename;
 
         //clean up (remove file if exists)
         if (file_exists($this->fullFilePath)) {
@@ -40,7 +42,7 @@ class CsvWriter
      *
      * @param $data
      */
-    public function appendData(string $data): bool
+    public function appendData(array $data): bool
     {
         fputcsv($this->fileHandle, $data);
         return true;

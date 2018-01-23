@@ -64,3 +64,20 @@ This Application has test cases for its processors. To run them do the following
 ```
 php vendor/bin/phpunit --colors --coverage-text --configuration tests/phpunit.xml.dist  tests/
 ```
+
+
+## RESULTS: 
+see ./report.csv
+month	salary	bonus
+2018-01	2018-01-31	2018-01-15
+2018-02	2018-02-28	2018-02-15
+2018-03	2018-03-30	2018-03-15
+2018-04	2018-04-30	2018-04-18
+2018-05	2018-05-31	2018-05-15
+2018-06	2018-06-29	2018-06-15
+2018-07	2018-07-31	2018-07-18
+2018-08	2018-08-31	2018-08-15
+2018-09	2018-09-28	2018-09-19
+2018-10	2018-10-31	2018-10-15
+2018-11	2018-11-30	2018-11-15
+2018-12	2018-12-31	2018-12-19
